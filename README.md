@@ -7,8 +7,8 @@ This project demonstrates an event-driven data workflow on Amazon Web Services (
 
 A visual representation of the data flow:
 
-<img width="1647" height="3838" alt="Untitled diagram _ Mermaid Chart-2025-07-23-032438" src="https://github.com/user-attachments/assets/56f66da7-0d69-4be0-bace-8cf02160ec15" />
-
+![Architecture Flowchart](<img width="1647" height="3838" alt="image" src="https://github.com/user-attachments/assets/9bb77ada-1b5d-404b-9a64-aa4b8afac213" />
+)
 
 ## Project Overview
 
