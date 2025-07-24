@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# AWS Lambda
+.DS_Store
+*.zip

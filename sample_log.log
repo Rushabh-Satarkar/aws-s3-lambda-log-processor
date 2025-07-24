@@ -1,0 +1,4 @@
+{"timestamp": "2025-07-21T10:00:00Z", "level": "INFO", "message": "User login successful", "user_id": "abc123"}
+{"timestamp": "2025-07-21T10:00:05Z", "level": "ERROR", "message": "Failed to connect to database", "error_code": 500}
+{"timestamp": "2025-07-21T10:00:10Z", "raw_message": "Invalid format log"}
+{"timestamp": "2025-07-21T10:00:15Z", "level": "DEBUG", "message": "Application health check"}
