@@ -7,8 +7,7 @@ This project demonstrates an event-driven data workflow on Amazon Web Services (
 
 A visual representation of the data flow:
 
-![Architecture Flowchart](<img width="1647" height="3838" alt="image" src="https://github.com/user-attachments/assets/9bb77ada-1b5d-404b-9a64-aa4b8afac213" />
-)
+![Architecture Flowchart](architecture_flowchart.png.png)
 
 ## Project Overview
 
