@@ -7,35 +7,8 @@ This project demonstrates an event-driven data workflow on Amazon Web Services (
 
 A visual representation of the data flow:
 
-```mermaid
-graph TD
-    A[Log Source: Upload File] --> B{S3 Bucket: Raw Logs};
+<img width="1647" height="3838" alt="Untitled diagram _ Mermaid Chart-2025-07-23-032438" src="https://github.com/user-attachments/assets/56f66da7-0d69-4be0-bace-8cf02160ec15" />
 
-    B -- ObjectCreated Event --> C[AWS Lambda: LogProcessorValidator Invocation];
-
-    subgraph AWS Lambda Processing
-        C --> D[Lambda: Read Log File from S3];
-        D --> E{Lambda: Parse Log Entries};
-        E --> F{Lambda: Validate Log Entry};
-
-        F -- Validated --> G[Lambda: Add Timestamp];
-        G --> H[Lambda: Write Processed Log (S3 /processed)];
-
-        F -- Invalid/Error --> I[Lambda: Write Failed Log (S3 /errors)];
-    end
-
-    H --> J(S3 Bucket: Processed Logs);
-    I --> J;
-
-    J --> K[AWS Glue Crawler: LogProcessorCrawler];
-    K --> L[AWS Glue Data Catalog: log_analytics_db];
-
-    L --> M[Amazon Athena: SQL Query];
-    M --> N[S3 Bucket: Athena Query Results];
-
-    C --> O[Amazon CloudWatch Logs];
-    M --> P[Data Analysts/Reporting Tools];
-````
 
 ## Project Overview
 
